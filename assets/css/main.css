@@ -294,6 +294,8 @@
     display: flex;
     flex-wrap: wrap;
     border-top: 1px solid #ddd;
+    max-height: 40vh;
+    overflow-y: auto;
 }
 
 .notify__item {
@@ -321,14 +323,26 @@
     flex-wrap: wrap;
     padding-left: 1rem;
     align-items: center;
+    margin-right: 20px;
 }
 .notify-item__name {
     font-size: 1.2rem;
-
+    line-height: 1.2rem;
+    max-height: 1.2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 .notify-item__description {
     font-size: 1rem;
+    line-height: 1;
+    max-height: 1rem;
     opacity: 0.8;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 
 .notify-footer {
